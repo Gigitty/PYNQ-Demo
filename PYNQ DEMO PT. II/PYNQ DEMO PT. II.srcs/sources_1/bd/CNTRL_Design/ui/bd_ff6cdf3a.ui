@@ -1,0 +1,17 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-483,-282",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace portBus BTNS -pg 1 -lvl 0 -x -10 -y -30 -defaultsOSRD
+preplace portBus LEDS -pg 1 -lvl 2 -x 270 -y -30 -defaultsOSRD
+preplace inst LED_Controller_0 -pg 1 -lvl 1 -x 130 -y -30 -defaultsOSRD
+preplace netloc BTNS_1 1 0 1 N -30
+preplace netloc LED_Controller_0_LEDS 1 1 1 N -30
+levelinfo -pg 1 -10 130 270
+pagesize -pg 1 -db -bbox -sgen -130 -90 390 120
+"
+}
+

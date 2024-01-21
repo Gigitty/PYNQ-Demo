@@ -1,0 +1,68 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1DBC172B1DBC172B",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design",
+      "name": "CNTRL_Design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "LED_Controller_0": ""
+    },
+    "ports": {
+      "BTNS": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "LEDS": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "LED_Controller_0": {
+        "vlnv": "xilinx.com:module_ref:LED_Controller:1.0",
+        "xci_name": "CNTRL_Design_LED_Controller_0_0",
+        "xci_path": "ip\\CNTRL_Design_LED_Controller_0_0\\CNTRL_Design_LED_Controller_0_0.xci",
+        "inst_hier_path": "LED_Controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "LED_Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BTNS": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "LEDS": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BTNS_1": {
+        "ports": [
+          "BTNS",
+          "LED_Controller_0/BTNS"
+        ]
+      },
+      "LED_Controller_0_LEDS": {
+        "ports": [
+          "LED_Controller_0/LEDS",
+          "LEDS"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Jan 20 22:40:21 2024
+# Process ID: 10768
+# Current directory: C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/impl_1
+# Command line: vivado.exe -log CNTRL_Design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CNTRL_Design_wrapper.tcl -notrace
+# Log file: C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/impl_1/CNTRL_Design_wrapper.vdi
+# Journal file: C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/impl_1\vivado.jou
+# Running On: DESKTOP-CQD30JI, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 16842 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl'
+source CNTRL_Design_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.027 ; gain = 119.027
+WARNING: [Board 49-151] The current board 'tul.com.tw::pynq-z2:1.0' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top CNTRL_Design_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/ip/CNTRL_Design_LED_Controller_0_0/CNTRL_Design_LED_Controller_0_0.dcp' for cell 'CNTRL_Design_i/LED_Controller_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1458.047 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LD[0]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD[1]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD[2]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LD[3]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1582.273 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+9 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1586.270 ; gain = 556.371
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1598.246 ; gain = 11.977
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2115.898 ; gain = 517.652
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2454.840 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2454.840 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2454.840 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.840 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.840 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: cca18cc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2454.840 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 9 Warnings, 8 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2454.840 ; gain = 868.570
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/impl_1/CNTRL_Design_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file CNTRL_Design_wrapper_drc_opted.rpt -pb CNTRL_Design_wrapper_drc_opted.pb -rpx CNTRL_Design_wrapper_drc_opted.rpx
+Command: report_drc -file CNTRL_Design_wrapper_drc_opted.rpt -pb CNTRL_Design_wrapper_drc_opted.pb -rpx CNTRL_Design_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
