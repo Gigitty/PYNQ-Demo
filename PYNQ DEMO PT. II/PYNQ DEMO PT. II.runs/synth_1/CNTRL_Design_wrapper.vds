@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sat Jan 20 22:39:05 2024
-# Process ID: 52624
+# Start of session at: Sat Jan 20 22:52:42 2024
+# Process ID: 48312
 # Current directory: C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1
 # Command line: vivado.exe -log CNTRL_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNTRL_Design_wrapper.tcl
 # Log file: C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/CNTRL_Design_wrapper.vds
@@ -13,7 +13,7 @@
 INFO: [Common 17-1460] Use of init.tcl in C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
 Sourcing tcl script 'C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl'
 source CNTRL_Design_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.727 ; gain = 120.574
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.469 ; gain = 120.852
 WARNING: [Board 49-151] The current board 'tul.com.tw::pynq-z2:1.0' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
@@ -30,30 +30,30 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 42512
+INFO: [Synth 8-7075] Helper process launched with PID 26436
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1853.664 ; gain = 408.035
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1855.535 ; gain = 410.543
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'CNTRL_Design_wrapper' [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/hdl/CNTRL_Design_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'CNTRL_Design' [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/synth/CNTRL_Design.v:12]
-INFO: [Synth 8-6157] synthesizing module 'CNTRL_Design_LED_Controller_0_0' [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/.Xil/Vivado-52624-DESKTOP-CQD30JI/realtime/CNTRL_Design_LED_Controller_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'CNTRL_Design_LED_Controller_0_0' (0#1) [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/.Xil/Vivado-52624-DESKTOP-CQD30JI/realtime/CNTRL_Design_LED_Controller_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CNTRL_Design_LED_Controller_0_0' [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/.Xil/Vivado-48312-DESKTOP-CQD30JI/realtime/CNTRL_Design_LED_Controller_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CNTRL_Design_LED_Controller_0_0' (0#1) [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/.Xil/Vivado-48312-DESKTOP-CQD30JI/realtime/CNTRL_Design_LED_Controller_0_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'CNTRL_Design' (0#1) [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/synth/CNTRL_Design.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'CNTRL_Design_wrapper' (0#1) [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/hdl/CNTRL_Design_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1943.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1945.590 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -61,37 +61,30 @@ Initializing timing engine
 Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/ip/CNTRL_Design_LED_Controller_0_0/CNTRL_Design_LED_Controller_0_0/CNTRL_Design_LED_Controller_0_0_in_context.xdc] for cell 'CNTRL_Design_i/LED_Controller_0'
 Finished Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.gen/sources_1/bd/CNTRL_Design/ip/CNTRL_Design_LED_Controller_0_0/CNTRL_Design_LED_Controller_0_0/CNTRL_Design_LED_Controller_0_0_in_context.xdc] for cell 'CNTRL_Design_i/LED_Controller_0'
 Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LD[0]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:4]
-WARNING: [Vivado 12-584] No ports matched 'LD[1]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:5]
-WARNING: [Vivado 12-584] No ports matched 'LD[2]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:6]
-WARNING: [Vivado 12-584] No ports matched 'LD[3]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:7]
-WARNING: [Vivado 12-584] No ports matched 'BTN[0]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:9]
-WARNING: [Vivado 12-584] No ports matched 'BTN[1]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:10]
-WARNING: [Vivado 12-584] No ports matched 'BTN[2]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:11]
-WARNING: [Vivado 12-584] No ports matched 'BTN[3]'. [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc:12]
 Finished Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CNTRL_Design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CNTRL_Design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CNTRL_Design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1943.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1945.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1943.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1945.590 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -99,10 +92,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property KEEP_HIERARCHY = SOFT for CNTRL_Design_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for CNTRL_Design_i/LED_Controller_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -125,25 +118,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1943.227 ; gain = 497.598
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1945.590 ; gain = 500.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1957.086 ; gain = 511.457
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1958.480 ; gain = 513.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -161,37 +154,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -213,24 +206,24 @@ Report Cell Usage:
 |3     |OBUF                          |     4|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1961.742 ; gain = 516.113
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1961.742 ; gain = 516.113
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1963.125 ; gain = 518.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1963.125 ; gain = 518.133
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1973.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1975.188 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1980.422 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1984.770 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: f3c1b926
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+30 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1980.422 ; gain = 945.434
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1984.770 ; gain = 949.277
 INFO: [Common 17-1381] The checkpoint 'C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ DEMO PT. II/PYNQ DEMO PT. II.runs/synth_1/CNTRL_Design_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file CNTRL_Design_wrapper_utilization_synth.rpt -pb CNTRL_Design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 20 22:40:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 20 22:53:50 2024...
