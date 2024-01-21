@@ -1,0 +1,189 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x28C1960429F31AC4",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl",
+      "name": "RGBCntrl",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Clock_Divider_0": "",
+      "RGBController_0": "",
+      "RGBController_1": ""
+    },
+    "ports": {
+      "CLK_I": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "RGBCntrl_CLK_I",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "SW0": {
+        "direction": "I"
+      },
+      "SW1": {
+        "direction": "I"
+      },
+      "RGB0": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "RGB1": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Clock_Divider_0": {
+        "vlnv": "xilinx.com:module_ref:Clock_Divider:1.0",
+        "xci_name": "RGBCntrl_Clock_Divider_0_0",
+        "xci_path": "ip\\RGBCntrl_Clock_Divider_0_0_2\\RGBCntrl_Clock_Divider_0_0.xci",
+        "inst_hier_path": "Clock_Divider_0",
+        "parameters": {
+          "DIVISOR": {
+            "value": "0x7735940"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Clock_Divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK_I": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "RGBCntrl_CLK_I",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "CLK_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "RGBController_0": {
+        "vlnv": "xilinx.com:module_ref:RGBController:1.0",
+        "xci_name": "RGBCntrl_RGBController_0_0",
+        "xci_path": "ip\\RGBCntrl_RGBController_0_0_2\\RGBCntrl_RGBController_0_0.xci",
+        "inst_hier_path": "RGBController_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RGBController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SW": {
+            "direction": "I"
+          },
+          "clk_in": {
+            "direction": "I"
+          },
+          "RGB": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "RGBController_1": {
+        "vlnv": "xilinx.com:module_ref:RGBController:1.0",
+        "xci_name": "RGBCntrl_RGBController_0_1",
+        "xci_path": "ip\\RGBCntrl_RGBController_0_1\\RGBCntrl_RGBController_0_1.xci",
+        "inst_hier_path": "RGBController_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RGBController",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SW": {
+            "direction": "I"
+          },
+          "clk_in": {
+            "direction": "I"
+          },
+          "RGB": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_I_1": {
+        "ports": [
+          "CLK_I",
+          "Clock_Divider_0/CLK_I"
+        ]
+      },
+      "Clock_Divider_0_CLK_O": {
+        "ports": [
+          "Clock_Divider_0/CLK_O",
+          "RGBController_0/clk_in",
+          "RGBController_1/clk_in"
+        ]
+      },
+      "RGBController_0_RGB": {
+        "ports": [
+          "RGBController_0/RGB",
+          "RGB0"
+        ]
+      },
+      "RGBController_1_RGB": {
+        "ports": [
+          "RGBController_1/RGB",
+          "RGB1"
+        ]
+      },
+      "SW1_1": {
+        "ports": [
+          "SW0",
+          "RGBController_0/SW"
+        ]
+      },
+      "SW2_1": {
+        "ports": [
+          "SW1",
+          "RGBController_1/SW"
+        ]
+      }
+    }
+  }
+}

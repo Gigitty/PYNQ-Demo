@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 21 02:27:34 2024" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="RGBCntrl" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="125000000" DIR="I" NAME="CLK_I" SIGIS="clk" SIGNAME="External_Ports_CLK_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Clock_Divider_0" PORT="CLK_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SW0" SIGIS="undef" SIGNAME="External_Ports_SW0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGBController_0" PORT="SW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SW1" SIGIS="undef" SIGNAME="External_Ports_SW1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGBController_1" PORT="SW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="RGB0" RIGHT="0" SIGIS="undef" SIGNAME="RGBController_0_RGB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGBController_0" PORT="RGB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="RGB1" RIGHT="0" SIGIS="undef" SIGNAME="RGBController_1_RGB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RGBController_1" PORT="RGB"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Clock_Divider_0" HWVERSION="1.0" INSTANCE="Clock_Divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Clock_Divider" VLNV="xilinx.com:module_ref:Clock_Divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIVISOR" VALUE="0x7735940"/>
+        <PARAMETER NAME="Component_Name" VALUE="RGBCntrl_Clock_Divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CLK_I" SIGIS="undef" SIGNAME="External_Ports_CLK_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CLK_O" SIGIS="undef" SIGNAME="Clock_Divider_0_CLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RGBController_0" PORT="clk_in"/>
+            <CONNECTION INSTANCE="RGBController_1" PORT="clk_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RGBController_0" HWVERSION="1.0" INSTANCE="RGBController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RGBController" VLNV="xilinx.com:module_ref:RGBController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="RGBCntrl_RGBController_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="SW" SIGIS="undef" SIGNAME="External_Ports_SW0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SW0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="Clock_Divider_0_CLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Clock_Divider_0" PORT="CLK_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="RGB" RIGHT="0" SIGIS="undef" SIGNAME="RGBController_0_RGB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RGB0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RGBController_1" HWVERSION="1.0" INSTANCE="RGBController_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RGBController" VLNV="xilinx.com:module_ref:RGBController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="RGBCntrl_RGBController_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="SW" SIGIS="undef" SIGNAME="External_Ports_SW1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SW1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="Clock_Divider_0_CLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Clock_Divider_0" PORT="CLK_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="RGB" RIGHT="0" SIGIS="undef" SIGNAME="RGBController_1_RGB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RGB1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

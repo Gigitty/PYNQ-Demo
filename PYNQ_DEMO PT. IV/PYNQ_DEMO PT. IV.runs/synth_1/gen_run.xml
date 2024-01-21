@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1705822062" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Clock_Divider.dcp">
+  <File Type="PA-TCL" Name="RGBCntrl_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RGBCntrl_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RGBCntrl_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RGBCntrl_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="RGBCntrl_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RGBCntrl_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RGBCntrl_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RGBCntrl_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RGBCntrl_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../PYNQ_DEMO PT . III/PYNQ_DEMO PT . III.srcs/sources_1/new/Clock_Divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RGBController.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/RGBCntrl/RGBCntrl.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/RGBCntrl/hdl/RGBCntrl_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RGBCntrl_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Clock_Divider.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="RGBCntrl_Clock_Divider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGBCntrl_RGBController_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGBCntrl_RGBController_0_1"/>
+</GenRun>

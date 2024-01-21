@@ -1,0 +1,241 @@
+
+*** Running vivado
+    with args -log RGBCntrl_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGBCntrl_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/abous/AppData/Roaming/Xilinx/Vivado/init.tcl'
+source RGBCntrl_wrapper.tcl -notrace
+WARNING: [Board 49-151] The current board 'tul.com.tw::pynq-z2:1.0' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.srcs/utils_1/imports/synth_1/Clock_Divider.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.srcs/utils_1/imports/synth_1/Clock_Divider.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top RGBCntrl_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37692
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1854.742 ; gain = 407.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RGBCntrl_wrapper' [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/hdl/RGBCntrl_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'RGBCntrl' [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/synth/RGBCntrl.v:12]
+INFO: [Synth 8-6157] synthesizing module 'RGBCntrl_Clock_Divider_0_0' [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_Clock_Divider_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RGBCntrl_Clock_Divider_0_0' (0#1) [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_Clock_Divider_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RGBCntrl_RGBController_0_0' [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_RGBController_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RGBCntrl_RGBController_0_0' (0#1) [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_RGBController_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'RGBCntrl_RGBController_0_1' [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_RGBController_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RGBCntrl_RGBController_0_1' (0#1) [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/.Xil/Vivado-46460-DESKTOP-CQD30JI/realtime/RGBCntrl_RGBController_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'RGBCntrl' (0#1) [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/synth/RGBCntrl.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'RGBCntrl_wrapper' (0#1) [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/hdl/RGBCntrl_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1944.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_Clock_Divider_0_0_2/RGBCntrl_Clock_Divider_0_0/RGBCntrl_Clock_Divider_0_0_in_context.xdc] for cell 'RGBCntrl_i/Clock_Divider_0'
+Finished Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_Clock_Divider_0_0_2/RGBCntrl_Clock_Divider_0_0/RGBCntrl_Clock_Divider_0_0_in_context.xdc] for cell 'RGBCntrl_i/Clock_Divider_0'
+Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_RGBController_0_0_2/RGBCntrl_RGBController_0_0/RGBCntrl_RGBController_0_0_in_context.xdc] for cell 'RGBCntrl_i/RGBController_0'
+Finished Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_RGBController_0_0_2/RGBCntrl_RGBController_0_0/RGBCntrl_RGBController_0_0_in_context.xdc] for cell 'RGBCntrl_i/RGBController_0'
+Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_RGBController_0_1/RGBCntrl_RGBController_0_1/RGBCntrl_RGBController_0_1_in_context.xdc] for cell 'RGBCntrl_i/RGBController_1'
+Finished Parsing XDC File [c:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.gen/sources_1/bd/RGBCntrl/ip/RGBCntrl_RGBController_0_1/RGBCntrl_RGBController_0_1/RGBCntrl_RGBController_0_1_in_context.xdc] for cell 'RGBCntrl_i/RGBController_1'
+Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RGBCntrl_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RGBCntrl_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1944.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1944.188 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for RGBCntrl_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RGBCntrl_i/Clock_Divider_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RGBCntrl_i/RGBController_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RGBCntrl_i/RGBController_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1944.188 ; gain = 497.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1949.184 ; gain = 502.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1949.184 ; gain = 502.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1968.293 ; gain = 521.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |RGBCntrl_Clock_Divider_0_0 |         1|
+|2     |RGBCntrl_RGBController_0_0 |         1|
+|3     |RGBCntrl_RGBController_0_1 |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |RGBCntrl_Clock_Divider_0 |     1|
+|2     |RGBCntrl_RGBController_0 |     2|
+|4     |IBUF                     |     3|
+|5     |OBUF                     |     6|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1973.066 ; gain = 526.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1973.066 ; gain = 526.262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1985.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 92efa139
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'C:/Users/abous/OneDrive/Documents/GitHub/PYNQ Demo/PYNQ_DEMO PT. IV/PYNQ_DEMO PT. IV.runs/synth_1/RGBCntrl_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGBCntrl_wrapper_utilization_synth.rpt -pb RGBCntrl_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 02:30:35 2024...

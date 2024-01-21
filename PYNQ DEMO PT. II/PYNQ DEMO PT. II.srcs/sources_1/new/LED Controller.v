@@ -26,4 +26,5 @@ module LED_Controller(
     );
     
     assign LEDS = BTNS;
+ 
 endmodule
