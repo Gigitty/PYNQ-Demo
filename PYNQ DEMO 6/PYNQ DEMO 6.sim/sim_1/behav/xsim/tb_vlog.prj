@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PYNQ Adders.srcs/sources_1/new/1-bit Adder.v" \
+"../../../../PYNQ Adders.srcs/sources_1/new/RC_Add.v" \
+"../../../../PYNQ Adders.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
